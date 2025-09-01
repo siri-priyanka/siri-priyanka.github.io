@@ -1,181 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Siri Priyanka – Portfolio</title>
-  <meta name="description" content="Production/Support Engineer portfolio – troubleshooting, incident management, AWS, SQL, MongoDB, Jira, Java basics." />
-  <style>
-    :root{
-      --bg:#ffffff;
-      --fg:#0f172a; /* slate-900 */
-      --muted:#475569; /* slate-600 */
-      --card:#f8fafc; /* slate-50 */
-      --link:#111827; /* neutral/dark, no pops of color */
-      --border:#e5e7eb; /* gray-200 */
-      --accent:#111827;
-      --radius:16px;
-    }
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";line-height:1.55}
-    .wrap{max-width:980px;margin:0 auto;padding:24px}
-    header{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border);padding-bottom:16px;margin-bottom:24px}
-    .id h1{margin:0;font-size:clamp(22px, 2.8vw, 32px);letter-spacing:.2px}
-    .id p{margin:6px 0 0;color:var(--muted)}
-    .contact{display:flex;flex-wrap:wrap;gap:8px}
-    .btn{border:1px solid var(--border);padding:10px 14px;border-radius:12px;background:var(--card);text-decoration:none;color:var(--link)}
-    .grid{display:grid;grid-template-columns:1fr;gap:16px}
-    @media (min-width:860px){.grid{grid-template-columns:1.2fr .8fr}}
-    section{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:16px}
-    h2{margin:0 0 10px 0;font-size:18px}
-    ul{margin:8px 0 0 20px}
-    li{margin:6px 0}
-    .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
-    .kpi{border:1px solid var(--border);border-radius:12px;padding:12px;background:#fff}
-    .muted{color:var(--muted)}
-    .two-col{columns:2;column-gap:20px}
-    code.badge{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;background:#fff;border:1px solid var(--border);padding:2px 8px;border-radius:8px}
-    footer{margin:28px 0 10px;color:var(--muted);font-size:14px}
-    a{color:var(--link)}
-    .chips{display:flex;flex-wrap:wrap;gap:8px}
-    .chip{border:1px solid var(--border);background:#fff;border-radius:999px;padding:6px 10px;font-size:14px}
-    .sr-only{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
-  </style>
-  <script>
-    function copyText(txt){navigator.clipboard.writeText(txt).then(()=>{alert('Copied: '+txt)})}
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Siri Priyanka",
-    "jobTitle": "Production/Support Engineer",
-    "url": "",
-    "sameAs": ["", ""],
-    "knowsAbout": ["Troubleshooting","Incident Management","AWS","SQL","MongoDB","Jira","Java","Linux"],
-    "email": ""
-  }
-  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Siri Priyanka | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div class="id">
-        <h1>Siri Priyanka</h1>
-        <p class="muted">Production / Support Engineer · Incident Management · Troubleshooting</p>
-      </div>
-      <nav class="contact" aria-label="Primary">
-        <a class="btn" href="mailto:youremail@example.com">Email</a>
-        <a class="btn" href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn" href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
-        <button class="btn" onclick="copyText('https://your-domain.com')" aria-label="Copy portfolio link">Copy Link</button>
-      </nav>
-    </header>
+  <header>
+    <h1>Hi, I'm Siri Priyanka 👩‍💻</h1>
+    <p>Production Support Engineer | Cloud Enthusiast</p>
+  </header>
 
-    <main class="grid">
-      <section aria-labelledby="about">
-        <h2 id="about">About</h2>
-        <p>
-          Production/Support engineer with hands-on experience in <strong>log analysis</strong>, <strong>incident response</strong>, and 
-          <strong>root-cause troubleshooting</strong> across cloud and database-backed applications. Comfortable collaborating with dev teams, writing clear RCA notes, and maintaining SLAs.
-        </p>
-        <div class="chips" aria-label="Core skills">
-          <span class="chip">AWS (EC2, S3)</span>
-          <span class="chip">SQL · PostgreSQL</span>
-          <span class="chip">MongoDB</span>
-          <span class="chip">Jira (SLA tracking)</span>
-          <span class="chip">Java basics</span>
-          <span class="chip">Log Analysis</span>
-        </div>
-      </section>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I love troubleshooting, coding, and building cloud solutions.</p>
+    </section>
 
-      <section aria-labelledby="experience">
-        <h2 id="experience">Experience</h2>
-        <article>
-          <h3 style="margin:6px 0">L2 Support Engineer · OYO</h3>
-          <p class="muted">Production support · Incident management</p>
-          <ul>
-            <li>Diagnosed booking and API failures via application & database logs; provided actionable RCAs.</li>
-            <li>Improved SLA adherence by prioritizing and escalating incidents with clear evidence in Jira.</li>
-            <li>Partnered with devs to reproduce edge cases; reduced repeat incidents.</li>
-          </ul>
-        </article>
-        <article>
-          <h3 style="margin:14px 0 6px">Production Support · GradRight</h3>
-          <p class="muted">Ed‑fin‑tech (study‑abroad loans & university selection)</p>
-          <ul>
-            <li>Supported loan-processing & program‑selection workflows; resolved API and integration issues.</li>
-            <li>Analyzed SQL/MongoDB queries for slow paths; suggested indexes and query fixes.</li>
-            <li>Coordinated with lenders/university partners on data mismatches and incident resolution.</li>
-          </ul>
-        </article>
-      </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>Tambola Game 🎲</li>
+        <li>Spring Boot + MySQL Example ⚡</li>
+        <li>Portfolio on GitHub Pages 🌐</li>
+      </ul>
+    </section>
+  </main>
 
-      <section aria-labelledby="projects">
-        <h2 id="projects">Projects</h2>
-        <article>
-          <h3 style="margin:6px 0"><a href="https://github.com/siri-priyanka/tambola" target="_blank" rel="noopener">Tambola (Housie) Game</a></h3>
-          <p class="muted">Personal project · Deployed target: AWS EC2 + RDS</p>
-          <ul>
-            <li>Interactive number draw and ticket generation; planning containerized deploy to EC2.</li>
-            <li>MySQL/RDS backend planned; CI/CD to automate build & deploy.</li>
-          </ul>
-        </article>
-        <article>
-          <h3 style="margin:14px 0 6px"><a href="https://github.com/siri-priyanka/spring-boot-mysql-example" target="_blank" rel="noopener">Spring Boot + MySQL Example</a></h3>
-          <p class="muted">Learning project</p>
-          <ul>
-            <li>Migrating javax.* to jakarta.* for Spring Boot 3 compatibility; fixing build & API endpoints.</li>
-            <li>Focus: CRUD APIs, exception handling, and basic integration tests.</li>
-          </ul>
-        </article>
-      </section>
+  <footer>
+    <p>© 2025 Siri Priyanka | <a href="https://github.com/siri-priyanka">GitHub</a></p>
+  </footer>
 
-      <section aria-labelledby="skills">
-        <h2 id="skills">Skills</h2>
-        <div class="two-col">
-          <p><strong>Languages/DB:</strong> SQL, MongoDB, Java (basics)</p>
-          <p><strong>Cloud/Tools:</strong> AWS (EC2, S3), Git, Postman, Jira</p>
-          <p><strong>Ops:</strong> Incident response, RCA, log analysis, SLA reporting</p>
-        </div>
-      </section>
-
-      <section aria-labelledby="education">
-        <h2 id="education">Education</h2>
-        <p>Details here (Degree · College · Year)</p>
-      </section>
-
-      <section aria-labelledby="extras">
-        <h2 id="extras">Extras</h2>
-        <ul>
-          <li>Open to roles: Production Support, Application Support, NOC/Operations.</li>
-          <li>Expected salary: ₹14,00,000 per annum (negotiable).</li>
-          <li>Career break: health/surgery – fully recovered and ready to work.</li>
-        </ul>
-      </section>
-
-      <section aria-labelledby="kpi">
-        <h2 id="kpi">Key KPIs</h2>
-        <div class="kpis">
-          <div class="kpi">
-            <strong>Incident Resolution Time</strong>
-            <p class="muted">Time to diagnose & restore service.</p>
-          </div>
-          <div class="kpi">
-            <strong>SLA Adherence</strong>
-            <p class="muted">% of tickets closed within SLA.</p>
-          </div>
-          <div class="kpi">
-            <strong>RCA & Fix Rate</strong>
-            <p class="muted">Permanent fixes vs. repeat incidents.</p>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <p>© <span id="year"></span> Siri Priyanka · Minimal, text‑first portfolio</p>
-    </footer>
-  </div>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="js/script.js"></script>
 </body>
 </html>
