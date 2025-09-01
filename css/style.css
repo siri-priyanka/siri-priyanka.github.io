@@ -1,76 +1,89 @@
+:root {
+  --bg: #f0ece1;
+  --card: #f9f5eb;
+  --border: #c5b5a9;
+  --accent: #8e6b5b;
+  --text: #181715;
+}
+
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background: #f7f9fc;
-  color: #333;
+  font-family: system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.wrap {
+  max-width: 1100px;
+  margin: auto;
+  padding: 24px;
 }
 
 header {
-  background: #4a90e2;
-  color: white;
-  text-align: center;
-  padding: 2rem;
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 12px;
+  margin-bottom: 24px;
 }
 
-h1 {
-  margin: 0;
-  font-size: 2.5rem;
+.contact p {
+  margin: 4px 0;
 }
 
-h2 {
-  color: #4a90e2;
-  margin-top: 2rem;
-}
-
-main {
-  max-width: 800px;
-  margin: auto;
-  padding: 1rem;
-}
-
-footer {
-  background: #222;
-  color: #aaa;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-}
-
-footer a {
-  color: #4a90e2;
-  text-decoration: none;
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
 section {
-  border-radius: 16px;
-  padding: 20px;
-  color: white;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-/* Hover effect */
-section:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-}
-
-/* Different background colors for each section */
-#about { background: linear-gradient(135deg, #4facfe, #00f2fe); }
-#experience { background: linear-gradient(135deg, #43e97b, #38f9d7); }
-#projects { background: linear-gradient(135deg, #fa709a, #fee140); color:#222; }
-#skills { background: linear-gradient(135deg, #f6d365, #fda085); }
-#education { background: linear-gradient(135deg, #30cfd0, #330867); }
-#extras { background: linear-gradient(135deg, #667eea, #764ba2); }
-#kpi { background: linear-gradient(135deg, #ff9a9e, #fad0c4); color:#222; }
-
-/* KPIs inside KPI section */
-.kpi {
-  background: rgba(255,255,255,0.85);
+  background: var(--card);
+  border: 1px solid var(--border);
   border-radius: 12px;
-  padding: 12px;
-  color: #111;
-  font-weight: 500;
+  padding: 16px;
 }
 
+/* Contact menu styles */
+.menu-container {
+  position: relative;
+  display: inline-block;
+  margin: 6px;
+}
+
+.menu-link {
+  cursor: pointer;
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.menu-popup {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 2px solid var(--accent);
+  border-radius: 6px;
+  z-index: 10;
+}
+
+.menu-popup a,
+.menu-popup button {
+  display: block;
+  padding: 8px 16px;
+  border: none;
+  background: white;
+  color: var(--accent);
+  text-align: left;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.menu-popup a:hover,
+.menu-popup button:hover {
+  background: var(--border);
+}
+
+.menu-container.active .menu-popup {
+  display: block;
+}

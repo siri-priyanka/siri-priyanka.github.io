@@ -8,128 +8,162 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <header class="main-nav">
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#extras">Extras</a>
+      <a href="#kpi">KPIs</a>
+    </nav>
+  </header>
   <div class="wrap">
     <header>
       <div class="id">
         <h1>Hi, I'm Siri Priyanka 👩‍💻</h1>
         <p class="muted">Production Support Engineer | Cloud Enthusiast · Incident Management · Troubleshooting</p>
       </div>
-      <nav class="contact" aria-label="Primary">
-        <a class="btn" href="mailto:youremail@example.com">Email</a>
-        <a class="btn" href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn" href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
-        <button class="btn" onclick="copyText('https://your-domain.com')" aria-label="Copy portfolio link">Copy Link</button>
-      </nav>
+      <div class="contact">
+        <p><strong>Email:</strong> siripriyankatalla612@gmail.com</p>
+        <p><strong>Mobile:</strong> +91 7095275099</p>
+
+        <!-- GitHub with hover/click menu -->
+        <div class="menu-container">
+          <span class="menu-link">GitHub</span>
+          <div class="menu-popup">
+            <a href="https://github.com/siri-priyanka" target="_blank">Open</a>
+            <button onclick="copyLink('https://github.com/siri-priyanka')">Copy</button>
+          </div>
+        </div>
+
+        <!-- LinkedIn with hover/click menu -->
+        <div class="menu-container">
+          <span class="menu-link">LinkedIn</span>
+          <div class="menu-popup">
+            <a href="https://www.linkedin.com/in/siri-priyanka-280ba720b/" target="_blank">Open</a>
+            <button onclick="copyLink('https://www.linkedin.com/in/siri-priyanka-280ba720b/')">Copy</button>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main class="grid">
       <!-- About -->
-      <section aria-labelledby="about">
-        <h2 id="about">About</h2>
-        <p>
-          Production/Support engineer with hands-on experience in <strong>log analysis</strong>, 
-          <strong>incident response</strong>, and <strong>root-cause troubleshooting</strong> across 
-          cloud and database-backed applications. Comfortable collaborating with dev teams, 
-          writing clear RCA notes, and maintaining SLAs.
-        </p>
-        <div class="chips" aria-label="Core skills">
-          <span class="chip">AWS (EC2, S3)</span>
-          <span class="chip">SQL · PostgreSQL</span>
-          <span class="chip">MongoDB</span>
-          <span class="chip">Jira (SLA tracking)</span>
-          <span class="chip">Java basics</span>
-          <span class="chip">Log Analysis</span>
-        </div>
-      </section>
-
-      <!-- Experience -->
-      <section aria-labelledby="experience">
-        <h2 id="experience">Experience</h2>
-        <article>
-          <h3>L2 Support Engineer · OYO</h3>
-          <p class="muted">Production support · Incident management</p>
-          <ul>
-            <li>Diagnosed booking and API failures via application & database logs; provided actionable RCAs.</li>
-            <li>Improved SLA adherence by prioritizing and escalating incidents with clear evidence in Jira.</li>
-            <li>Partnered with devs to reproduce edge cases; reduced repeat incidents.</li>
-          </ul>
-        </article>
-        <article>
-          <h3>Production Support · GradRight</h3>
-          <p class="muted">Ed-fin-tech (study-abroad loans & university selection)</p>
-          <ul>
-            <li>Supported loan-processing & program-selection workflows; resolved API and integration issues.</li>
-            <li>Analyzed SQL/MongoDB queries for slow paths; suggested indexes and query fixes.</li>
-            <li>Coordinated with lenders/university partners on data mismatches and incident resolution.</li>
-          </ul>
-        </article>
-      </section>
-
-      <!-- Projects -->
-      <section aria-labelledby="projects">
-        <h2 id="projects">Projects</h2>
-        <article>
-          <h3><a href="https://github.com/siri-priyanka/tambola" target="_blank" rel="noopener">Tambola 🎲 (Housie) Game</a></h3>
-          <p class="muted">Personal project · Deployed target: AWS EC2 + RDS</p>
-          <ul>
-            <li>Interactive number draw and ticket generation; planning containerized deploy to EC2.</li>
-            <li>MySQL/RDS backend planned; CI/CD to automate build & deploy.</li>
-          </ul>
-        </article>
-        <article>
-          <h3><a href="https://github.com/siri-priyanka/spring-boot-mysql-example" target="_blank" rel="noopener">Spring Boot + MySQL Example</a></h3>
-          <p class="muted">Learning project</p>
-          <ul>
-            <li>Migrating javax.* to jakarta.* for Spring Boot 3 compatibility; fixing build & API endpoints.</li>
-            <li>Focus: CRUD APIs, exception handling, and basic integration tests.</li>
-          </ul>
-        </article>
-      </section>
-
-      <!-- Skills -->
-      <section aria-labelledby="skills">
-        <h2 id="skills">Skills</h2>
-        <div class="two-col">
-          <p><strong>Languages/DB:</strong> SQL, MongoDB, Java (basics)</p>
-          <p><strong>Cloud/Tools:</strong> AWS (EC2, S3), Git, Postman, Jira</p>
-          <p><strong>Ops:</strong> Incident response, RCA, log analysis, SLA reporting</p>
-        </div>
-      </section>
-
-      <!-- Education -->
-      <section aria-labelledby="education">
-        <h2 id="education">Education</h2>
-        <p>Details here (Degree · College · Year)</p>
-      </section>
-
-      <!-- Extras -->
-      <section aria-labelledby="extras">
-        <h2 id="extras">Extras</h2>
-        <ul>
-          <li>Open to roles: Production Support, Application Support, NOC/Operations.</li>
-          <li>Expected salary: ₹14,00,000 per annum (negotiable).</li>
-          <li>Career break: health/surgery – fully recovered and ready to work.</li>
-        </ul>
-      </section>
-
-      <!-- KPIs -->
-      <section aria-labelledby="kpi">
-        <h2 id="kpi">Key KPIs</h2>
-        <div class="kpis">
-          <div class="kpi">
-            <strong>Incident Resolution Time</strong>
-            <p class="muted">Time to diagnose & restore service.</p>
+      <div class="left-col">
+        <section aria-labelledby="about">
+          <h2 id="about">About</h2>
+          <p>
+            Production/Support engineer with hands-on experience in <strong>log analysis</strong>, 
+            <strong>incident response</strong>, and <strong>root-cause troubleshooting</strong> across 
+            cloud and database-backed applications. Comfortable collaborating with dev teams, 
+            writing clear RCA notes, and maintaining SLAs.
+          </p>
+          <div class="chips" aria-label="Core skills">
+            <span class="chip">AWS (EC2, S3)</span>
+            <span class="chip">SQL · PostgreSQL</span>
+            <span class="chip">MongoDB</span>
+            <span class="chip">Jira (SLA tracking)</span>
+            <span class="chip">Java basics</span>
+            <span class="chip">Log Analysis</span>
           </div>
-          <div class="kpi">
-            <strong>SLA Adherence</strong>
-            <p class="muted">% of tickets closed within SLA.</p>
+        </section>
+
+        
+
+        <!-- Skills -->
+        <section aria-labelledby="skills">
+          <h2 id="skills">Skills</h2>
+          <div class="two-col">
+            <p><strong>Languages/DB:</strong> SQL, MongoDB, Java (basics)</p>
+            <p><strong>Cloud/Tools:</strong> AWS (EC2, S3), Git, Postman, Jira</p>
+            <p><strong>Ops:</strong> Incident response, RCA, log analysis, SLA reporting</p>
           </div>
-          <div class="kpi">
-            <strong>RCA & Fix Rate</strong>
-            <p class="muted">Permanent fixes vs. repeat incidents.</p>
+        </section>
+
+        <!-- Education -->
+        <section aria-labelledby="education">
+          <h2 id="education">Education</h2>
+          <p>Details here (Degree · College · Year)</p>
+        </section>
+      </div>
+
+
+      <div class="right-col">
+        <!-- Experience -->
+        <section aria-labelledby="experience">
+          <h2 id="experience">Experience</h2>
+          <article>
+            <h3>L2 Support Engineer · OYO</h3>
+            <p class="muted">Production support · Incident management</p>
+            <ul>
+              <li>Diagnosed booking and API failures via application & database logs; provided actionable RCAs.</li>
+              <li>Improved SLA adherence by prioritizing and escalating incidents with clear evidence in Jira.</li>
+              <li>Partnered with devs to reproduce edge cases; reduced repeat incidents.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Production Support · GradRight</h3>
+            <p class="muted">Ed-fin-tech (study-abroad loans & university selection)</p>
+            <ul>
+              <li>Supported loan-processing & program-selection workflows; resolved API and integration issues.</li>
+              <li>Analyzed SQL/MongoDB queries for slow paths; suggested indexes and query fixes.</li>
+              <li>Coordinated with lenders/university partners on data mismatches and incident resolution.</li>
+            </ul>
+          </article>
+        </section>
+
+        <!-- Projects -->
+        <section aria-labelledby="projects">
+          <h2 id="projects">Projects</h2>
+          <article>
+            <h3><a href="https://github.com/siri-priyanka/tambola" target="_blank" rel="noopener">Tambola 🎲 (Housie) Game</a></h3>
+            <p class="muted">Personal project · Deployed target: AWS EC2 + RDS</p>
+            <ul>
+              <li>Interactive number draw and ticket generation; planning containerized deploy to EC2.</li>
+              <li>MySQL/RDS backend planned; CI/CD to automate build & deploy.</li>
+            </ul>
+          </article>
+          <article>
+            <h3><a href="https://github.com/siri-priyanka/spring-boot-mysql-example" target="_blank" rel="noopener">Spring Boot + MySQL Example</a></h3>
+            <p class="muted">Learning project</p>
+            <ul>
+              <li>Migrating javax.* to jakarta.* for Spring Boot 3 compatibility; fixing build & API endpoints.</li>
+              <li>Focus: CRUD APIs, exception handling, and basic integration tests.</li>
+            </ul>
+          </article>
+        </section>
+
+        <!-- Extras -->
+        <section aria-labelledby="extras">
+          <h2 id="extras">Extras</h2>
+          <ul>
+            <li>Open to roles: Production Support, Application Support, NOC/Operations.</li>
+            <li>Expected salary: ₹14,00,000 per annum (negotiable).</li>
+            <li>Career break: health/surgery – fully recovered and ready to work.</li>
+          </ul>
+        </section>
+
+        <!-- KPIs -->
+        <section aria-labelledby="kpi">
+          <h2 id="kpi">Key KPIs</h2>
+          <div class="kpis">
+            <div class="kpi">
+              <strong>Incident Resolution Time</strong>
+              <p class="muted">Time to diagnose & restore service.</p>
+            </div>
+            <div class="kpi">
+              <strong>SLA Adherence</strong>
+              <p class="muted">% of tickets closed within SLA.</p>
+            </div>
+            <div class="kpi">
+              <strong>RCA & Fix Rate</strong>
+              <p class="muted">Permanent fixes vs. repeat incidents.</p>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
 
     <footer>
