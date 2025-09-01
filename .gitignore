@@ -1,0 +1,7 @@
+*.pdf
+*.yaml
+*.xml
+*.txt
+.DS_Store
+.localized
+AWS&DevOps/
