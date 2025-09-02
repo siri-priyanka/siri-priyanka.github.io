@@ -23,11 +23,6 @@ h2 {
   margin-top: 0;
 }
 
-.muted {
-  margin-bottom: 6px;
-  color: #b35b5bc7;
-}
-
 .wrap {
   max-width: 1100px;
   margin: auto;
@@ -206,10 +201,6 @@ body.dark h2{
   color: var(--accent);
 }
 
-body.dark h3 {
-  color: #f4c542; /* Amber for job titles */
-}
-
 /* KPI total readability */
 .kpi strong {
   color: var(--accent);
@@ -240,11 +231,14 @@ body.dark .contact p {
 }
 
 /* Muted text for KPI descriptions */
+
 .muted {
-  color: #555; /* light mode */
+  margin-bottom: 6px;
+  color: #b35b5bc7; /* light mode */
 }
+
 body.dark .muted {
-  color: #a49ec9; /* lavender for KPI descriptions in dark mode */
+  color: #f4c542; /* Amber for job titles */
 }
 
 /* Meta text for project/experience subtitles */
