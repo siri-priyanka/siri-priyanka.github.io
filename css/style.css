@@ -182,3 +182,42 @@ body.dark {
 .toggle-theme:hover {
   opacity: 0.9;
 }
+
+/* Navigation links */
+.main-nav a {
+  color: var(--accent);
+  text-decoration: none;
+  margin-right: 12px;
+  font-weight: bold;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Chips contrast fix */
+body.dark .chip {
+  background-color: #4a637a; /* softer blue-gray */
+  color: #fff;
+}
+
+/* Section headers */
+body.dark h2,
+body.dark h3 {
+  color: var(--accent);
+}
+
+/* KPI total readability */
+.kpi strong {
+  color: var(--accent);
+}
+
+/* Links inside projects */
+section a {
+  color: var(--accent);
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+
