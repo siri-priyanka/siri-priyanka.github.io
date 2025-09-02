@@ -73,13 +73,12 @@ section {
   position: relative;
   display: inline-block;
   margin: 6px;
-  margin-bottom: 6px;
-  color: #b35b5bc7; /* light mode */
 }
 
 .menu-link {
   cursor: pointer;
-  color: var(--accent);
+  margin-bottom: 6px;
+  color: #b35b5bc7; /* light mode */
   font-weight: bold;
 }
 
@@ -232,7 +231,7 @@ body.dark .contact p {
   color: #f1f1f1; /* light gray so phone/email stay visible */
 }
 
-body.dark .menu-container {
+body.dark .menu-link {
   color: #f4c542; /* Amber for job titles */
 }
 
