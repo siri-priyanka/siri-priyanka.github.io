@@ -202,9 +202,12 @@ body.dark .chip {
 }
 
 /* Section headers */
-body.dark h2,
-body.dark h3 {
+body.dark h2{
   color: var(--accent);
+}
+
+body.dark h3 {
+  color: #f4c542; /* Amber for job titles */
 }
 
 /* KPI total readability */
@@ -214,28 +217,41 @@ body.dark h3 {
 }
 
 body.dark .kpi strong {
-  color: #5dade2; /* same as project link, consistent */
+  color: #f4c542; /* same as project link, consistent */
 }
 
 /* Links inside projects */
 section a {
-  color: var(--accent);
   font-weight: bold;
+  text-decoration: none;
+  color: var(--accent); /* light mode accent */
 }
 
 body.dark section a {
-  color: #5dade2; /* brighter sky blue for dark mode */
+  color: #f4c542; /* brighter sky blue for dark mode */
 }
 
 section a:hover {
   text-decoration: underline;
 }
 
-/* KPI muted text */
-.muted {
-  color: #666; /* light mode muted gray */
+body.dark .contact p {
+  color: #f1f1f1; /* light gray so phone/email stay visible */
 }
 
+/* Muted text for KPI descriptions */
+.muted {
+  color: #555; /* light mode */
+}
 body.dark .muted {
-  color: #d0d6dc; /* light gray-blue for dark mode readability */
+  color: #a49ec9; /* lavender for KPI descriptions in dark mode */
+}
+
+/* Meta text for project/experience subtitles */
+.meta {
+  color: #777; /* light mode */
+  font-style: italic;
+}
+body.dark .meta {
+  color: #234b2d; /* deep green for project/experience subtitles in dark mode */
 }
