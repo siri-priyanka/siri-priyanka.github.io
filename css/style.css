@@ -1,9 +1,13 @@
 :root {
-  --bg: #f0ece1;
-  --card: #f9f5eb;
-  --border: #c5b5a9;
-  --accent: #8e6b5b;
-  --text: #181715;
+  --bg: #f0e1e1;
+  --card: #f9ebeb;
+  --border: #c5a9a9;
+  --accent: #8e5d5b;
+  --text: #181515;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -12,6 +16,16 @@ body {
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
+}
+
+h2 {
+  color: var(--accent);
+  margin-top: 0;
+}
+
+h3 {
+  margin-bottom: 6px;
+  color: #444;
 }
 
 .wrap {
@@ -41,6 +55,22 @@ section {
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 16px;
+  margin-bottom: 20px;
+}
+
+.chip {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 4px;
+  border-radius: 20px;
+  background-color: #f1f1f1;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.chip:hover {
+  background: var(--border);
+  color: var(--accent);
 }
 
 /* Contact menu styles */
@@ -86,4 +116,69 @@ section {
 
 .menu-container.active .menu-popup {
   display: block;
+}
+
+/* Toast notification */
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #333;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  opacity: 0.9;
+  z-index: 1000;
+}
+
+/* KPIs grid */
+.kpis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.kpi {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Dark mode theme */
+body.dark {
+  --bg: #1a1a1a;
+  --card: #2a2a2a;
+  --border: #444;
+  --accent: #e6b3b3;
+  --text: #f5f5f5;
+}
+
+/* Toggle button styling */
+.toggle-theme {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+.toggle-theme:hover {
+  opacity: 0.9;
 }

@@ -33,7 +33,7 @@
         <div class="menu-container">
           <span class="menu-link">GitHub</span>
           <div class="menu-popup">
-            <a href="https://github.com/siri-priyanka" target="_blank">Open</a>
+            <a href="https://github.com/siri-priyanka" target="_blank" aria-label="GitHub Profile">Open</a>
             <button onclick="copyLink('https://github.com/siri-priyanka')">Copy</button>
           </div>
         </div>
@@ -55,82 +55,98 @@
         <section aria-labelledby="about">
           <h2 id="about">About</h2>
           <p>
-            Production/Support engineer with hands-on experience in <strong>log analysis</strong>, 
-            <strong>incident response</strong>, and <strong>root-cause troubleshooting</strong> across 
-            cloud and database-backed applications. Comfortable collaborating with dev teams, 
-            writing clear RCA notes, and maintaining SLAs.
+            Production/Support Engineer with hands-on experience in <strong>log analysis</strong>, <strong>incident response</strong>, and <strong>root-cause troubleshooting</strong> across cloud and database-backed applications. Skilled in working with <strong>AWS services</strong> and familiar with <strong>DevOps tools</strong> for automation and monitoring. Comfortable collaborating with development teams, writing clear RCA notes, and maintaining SLAs.
           </p>
           <div class="chips" aria-label="Core skills">
-            <span class="chip">AWS (EC2, S3)</span>
-            <span class="chip">SQL · PostgreSQL</span>
-            <span class="chip">MongoDB</span>
+            <span class="chip">SQL+MongoDB, PostgreSQL</span>
+            <span class="chip">Python, Java basics</span>
+            <span class="chip">AWS, CI/CD Pipeline</span>
             <span class="chip">Jira (SLA tracking)</span>
-            <span class="chip">Java basics</span>
+            <span class="chip">API, Postman</span>
             <span class="chip">Log Analysis</span>
           </div>
         </section>
-
-        
 
         <!-- Skills -->
         <section aria-labelledby="skills">
           <h2 id="skills">Skills</h2>
           <div class="two-col">
-            <p><strong>Languages/DB:</strong> SQL, MongoDB, Java (basics)</p>
-            <p><strong>Cloud/Tools:</strong> AWS (EC2, S3), Git, Postman, Jira</p>
-            <p><strong>Ops:</strong> Incident response, RCA, log analysis, SLA reporting</p>
+            <p><strong>Cloud & DevOps:</strong> AWS (EC2, S3, VPC, RDS, IAM, CloudFront, ELB, Route 53), Terraform, Jenkins, Git, Docker, ArgoCD, Ansible (basic), Amazon EKS (basic)</p>
+            <p><strong>Monitoring & Incident Management:</strong> CloudWatch, Kibana, Grafana, Jira, SLA Tracking, Troubleshooting, Incident Response</p>
+            <p><strong>Databases & APIs:</strong> SQL, MongoDB, Postman</p>
+            <p><strong>Programming Languages:</strong> Python, Java (Basic)</p>
+            <p><strong>Web/Application Servers:</strong> Nginx, Httpd, Tomcat</p>
+            <p><strong>Reporting Tools:</strong> Tableau, MS Excel</p>
+            <p><strong>Operating Systems:</strong> macOS, Windows</p>
           </div>
         </section>
 
         <!-- Education -->
         <section aria-labelledby="education">
           <h2 id="education">Education</h2>
-          <p>Details here (Degree · College · Year)</p>
-        </section>
-      </div>
-
-
-      <div class="right-col">
-        <!-- Experience -->
-        <section aria-labelledby="experience">
-          <h2 id="experience">Experience</h2>
-          <article>
-            <h3>L2 Support Engineer · OYO</h3>
-            <p class="muted">Production support · Incident management</p>
-            <ul>
-              <li>Diagnosed booking and API failures via application & database logs; provided actionable RCAs.</li>
-              <li>Improved SLA adherence by prioritizing and escalating incidents with clear evidence in Jira.</li>
-              <li>Partnered with devs to reproduce edge cases; reduced repeat incidents.</li>
-            </ul>
-          </article>
-          <article>
-            <h3>Production Support · GradRight</h3>
-            <p class="muted">Ed-fin-tech (study-abroad loans & university selection)</p>
-            <ul>
-              <li>Supported loan-processing & program-selection workflows; resolved API and integration issues.</li>
-              <li>Analyzed SQL/MongoDB queries for slow paths; suggested indexes and query fixes.</li>
-              <li>Coordinated with lenders/university partners on data mismatches and incident resolution.</li>
-            </ul>
-          </article>
+          <p><strong>University:</strong> Andhra University</p>
+          <p><strong>College:</strong> SRKR Engineering College, Bhimavaram</p>
+          <p><strong>Degree:</strong> B.Tech (Electronics and Communication Engineering)</p>
+          <p><strong>Passed out:</strong> 2019</p>
         </section>
 
         <!-- Projects -->
         <section aria-labelledby="projects">
           <h2 id="projects">Projects</h2>
+          
           <article>
-            <h3><a href="https://github.com/siri-priyanka/tambola" target="_blank" rel="noopener">Tambola 🎲 (Housie) Game</a></h3>
-            <p class="muted">Personal project · Deployed target: AWS EC2 + RDS</p>
+            <h3>
+              <a href="https://github.com/siri-priyanka/tambola" target="_blank" rel="noopener">
+                Tambola 🎲 (Housie) Game
+              </a>
+            </h3>
+            <p class="muted">Personal project · Target deployment: AWS EC2 + RDS</p>
             <ul>
-              <li>Interactive number draw and ticket generation; planning containerized deploy to EC2.</li>
-              <li>MySQL/RDS backend planned; CI/CD to automate build & deploy.</li>
+              <li>Interactive number draw and ticket generation; containerized deployment planned for EC2.</li>
+              <li>MySQL/RDS backend with CI/CD pipeline to automate build and deployment.</li>
             </ul>
           </article>
+          
           <article>
-            <h3><a href="https://github.com/siri-priyanka/spring-boot-mysql-example" target="_blank" rel="noopener">Spring Boot + MySQL Example</a></h3>
-            <p class="muted">Learning project</p>
+            <h3>
+              <a href="https://github.com/siri-priyanka/spring-boot-mysql-example" target="_blank" rel="noopener">
+                Spring Boot + MySQL Example
+              </a>
+            </h3>
+            <p class="muted">Hands-on learning project</p>
             <ul>
-              <li>Migrating javax.* to jakarta.* for Spring Boot 3 compatibility; fixing build & API endpoints.</li>
-              <li>Focus: CRUD APIs, exception handling, and basic integration tests.</li>
+              <li>Migrated javax.* to jakarta.* for Spring Boot 3 compatibility; fixed build and API endpoints.</li>
+              <li>Focused on CRUD APIs, exception handling, and basic integration tests.</li>
+            </ul>
+          </article>
+        </section>
+
+      </div>
+
+
+      <div class="right-col">
+
+        <!-- Experience -->
+        <section aria-labelledby="experience">
+          <h2 id="experience">Experience</h2>
+          
+          <article>
+            <h3>Production Support Engineer · GradRight</h3>
+            <p class="muted">Ed-fin-tech · Study-abroad loans & university selection platform</p>
+            <ul>
+              <li>Resolved API and integration issues in loan-processing and program-selection workflows.</li>
+              <li>Analyzed SQL/MongoDB queries for slow paths; recommended indexes and query optimizations.</li>
+              <li>Coordinated with lenders and university partners to resolve data mismatches and incidents.</li>
+            </ul>
+          </article>
+          
+          <article>
+            <h3>L2 Support Engineer · OYO</h3>
+            <p class="muted">Production support · Incident management</p>
+            <ul>
+              <li>Diagnosed booking and API failures via application & database logs; delivered clear RCA reports.</li>
+              <li>Improved SLA adherence by prioritizing and escalating incidents with evidence in Jira.</li>
+              <li>Partnered with developers to reproduce edge cases, reducing repeat incidents.</li>
             </ul>
           </article>
         </section>
@@ -140,8 +156,7 @@
           <h2 id="extras">Extras</h2>
           <ul>
             <li>Open to roles: Production Support, Application Support, NOC/Operations.</li>
-            <li>Expected salary: ₹14,00,000 per annum (negotiable).</li>
-            <li>Career break: health/surgery – fully recovered and ready to work.</li>
+            <li>Took a short health-related career break; now fully recovered and ready to contribute.</li>
           </ul>
         </section>
 
@@ -151,18 +166,29 @@
           <div class="kpis">
             <div class="kpi">
               <strong>Incident Resolution Time</strong>
-              <p class="muted">Time to diagnose & restore service.</p>
+              <p class="muted">Average time to diagnose issues and restore service stability.</p>
             </div>
             <div class="kpi">
               <strong>SLA Adherence</strong>
-              <p class="muted">% of tickets closed within SLA.</p>
+              <p class="muted">Percentage of incidents resolved within defined SLAs.</p>
             </div>
             <div class="kpi">
               <strong>RCA & Fix Rate</strong>
-              <p class="muted">Permanent fixes vs. repeat incidents.</p>
+              <p class="muted">Ratio of permanent fixes implemented vs. recurring incidents.</p>
             </div>
           </div>
         </section>
+      
+       <!-- Achievements -->
+       <section aria-labelledby="achievements">
+        <h2 id="achievements">Achievements</h2>
+        <ul>
+          <li>Reduced ticket resolution time by 20% at GradRight through diagnostics and log correlation.</li>
+          <li>Maintained 99.99% uptime across production workloads at OYO.</li>
+          <li>Automated AWS provisioning with Terraform, improving deployment efficiency.</li>
+        </ul>
+      </section>
+
       </div>
     </main>
 
@@ -170,6 +196,9 @@
       <p>© <span id="year"></span> Siri Priyanka · Minimal, text-first portfolio</p>
     </footer>
   </div>
+  
+  <!-- Toggle Theme -->
+  <button class="toggle-theme" onclick="toggleTheme()">🌙 Dark Mode</button>
 
   <script src="js/script.js"></script>
 </body>
