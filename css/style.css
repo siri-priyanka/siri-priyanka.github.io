@@ -210,14 +210,32 @@ body.dark h3 {
 /* KPI total readability */
 .kpi strong {
   color: var(--accent);
+  font-size: 16px;
+}
+
+body.dark .kpi strong {
+  color: #5dade2; /* same as project link, consistent */
 }
 
 /* Links inside projects */
 section a {
   color: var(--accent);
+  font-weight: bold;
+}
+
+body.dark section a {
+  color: #5dade2; /* brighter sky blue for dark mode */
 }
 
 section a:hover {
   text-decoration: underline;
 }
 
+/* KPI muted text */
+.muted {
+  color: #666; /* light mode muted gray */
+}
+
+body.dark .muted {
+  color: #d0d6dc; /* light gray-blue for dark mode readability */
+}
