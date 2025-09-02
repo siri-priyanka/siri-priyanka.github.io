@@ -73,6 +73,8 @@ section {
   position: relative;
   display: inline-block;
   margin: 6px;
+  margin-bottom: 6px;
+  color: #b35b5bc7; /* light mode */
 }
 
 .menu-link {
@@ -230,14 +232,7 @@ body.dark .contact p {
   color: #f1f1f1; /* light gray so phone/email stay visible */
 }
 
-/* Muted text for KPI descriptions */
-
-.muted {
-  margin-bottom: 6px;
-  color: #b35b5bc7; /* light mode */
-}
-
-body.dark .muted {
+body.dark .menu-container {
   color: #f4c542; /* Amber for job titles */
 }
 
